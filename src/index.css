@@ -7,26 +7,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-button {
-  border: none;
-  cursor: pointer;
-  border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
-  margin: 0.5rem;
-  background-color: #6f77da;
-}
-
-button:focus {
-  outline: none;
-}
-
-button:disabled {
-  background-color: #c7c7c7;
+p {
+  margin: 1rem;
 }
 
 header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .App {
@@ -34,4 +21,18 @@ header {
   background-color: #a4a4fff5;
   color: black;
   padding: 1rem;
+}
+
+.scanner {
+  width: 20rem;
+  height: auto;
+}
+
+.info-block {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info-block div {
+  padding: 0.5rem 0;
 }
