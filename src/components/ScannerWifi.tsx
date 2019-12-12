@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { fetchData } from '../utils';
+import Button from '@material-ui/core/Button';
 
 const ScannerWifi: React.FC = () => {
   const [wifiStatus, setWifiStatus] = useState('Not connected');
   const [networks, setNetworks] = useState([]);
-  const [localIP, setLocalIP] = useState('');
-  const [isRefreshButtonDisabled, setRefreshButtonDisabled] = useState(false);
+  const [isRefreshButtonDisabled, setRefreshButtonDisabled] = useState(true);
 
   useEffect(() => {
     fetchData('statusWiFi', 'statusWiFi')
@@ -13,26 +13,16 @@ const ScannerWifi: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    fetchData('localIP', 'wifiLocalIP')
-      .then(res => setLocalIP(res));
     if (wifiStatus !== 'Connected') {
-        setTimeout(() => {
-          fetchData('scannerWiFi', 'networks')
-            .then(res => setNetworks(res));
-      }, 2000);
+        setTimeout(() => refreshWifi(), 2000);
     }
   }, [wifiStatus]);
 
 
   return (
-      <div key={123}>
-      <p>WiFi Status: { wifiStatus }</p>
-      { wifiStatus === 'Connected' && <p>Your local IP: { localIP }</p> }
-      <button onClick={ changeWifiStatus }>
-        { wifiStatus === 'Connected' ? 'Disconnect' : 'Connect' }
-      </button>
+      <div className='scanner'>
       { wifiStatus !== 'Connected' &&
-      <button onClick={ refreshWifi } disabled={ isRefreshButtonDisabled }>Refresh</button>
+      <Button variant="contained" color="primary" onClick={ refreshWifi } disabled={ isRefreshButtonDisabled }>Refresh</Button>
       }
       { wifiStatus !== 'Connected' &&
       networks.map((network) => {
@@ -44,15 +34,10 @@ const ScannerWifi: React.FC = () => {
     </div>
   );
 
-  function changeWifiStatus() {
-    wifiStatus === 'Connected' ? setWifiStatus('Not connected') : setWifiStatus('Connected');
-  }
-
   function refreshWifi() {
     setRefreshButtonDisabled(true);
-    setTimeout(() => setRefreshButtonDisabled(false), 3000);
-    fetchData('scannerWiFi', 'networks')
-      .then(res => setNetworks(res));
+    fetchData('scannerWiFi', 'networks', setNetworks)
+      .finally(() => setTimeout(() => setRefreshButtonDisabled(false), 1500));
   }
 };
 
