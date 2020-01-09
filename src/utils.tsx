@@ -1,12 +1,9 @@
-const hardcodedAddress: string = '//192.168.0.102/';
+const hardcodedAddress: string = '//192.168.0.103/';
 
-async function fetchData(link: string, attr: string = link, callback?: (val: any) => void) {
+async function fetchData(link: string, attr: string = link) {
   return await fetch(hardcodedAddress + link)
     .then(res => res.json())
-    .then(res => {
-      callback && callback(res[attr]);
-      return res[attr];
-    });
+    .then(res => res[attr]);
 }
 
 export { fetchData };

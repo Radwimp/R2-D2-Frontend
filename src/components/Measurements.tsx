@@ -6,7 +6,7 @@ const Measurements: React.FC = () => {
 
   useEffect(() => {
     fetchData('getData', 'data')
-      .then(res => setData(res));
+      .then(setData);
   }, []);
 
   return (

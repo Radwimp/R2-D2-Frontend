@@ -1,16 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { fetchData } from '../utils';
 import Button from '@material-ui/core/Button';
-import AlertDialogSlide from './AlertDialogSlide';
+import ScannerWifi from './ScannerWifi';
 
 const MemoryInfo: React.FC = () => {
   const [wifiStatus, setWifiStatus] = useState('Not connected');
   const [localIP, setLocalIP] = useState('');
-  const [freeMemory, setFreeMemory] = useState('');
+  const [freeMemory, setFreeMemory] = useState(0);
+
+  const changeWifiStatus = () => {
+    wifiStatus === 'Connected' ? setWifiStatus('Not connected') : setWifiStatus('Connected');
+  };
 
   useEffect(() => {
-    fetchData('localIP', 'wifiLocalIP', setLocalIP).finally();
-    fetchData('freeMemory', 'freeMemory', setFreeMemory).finally();
+    fetchData('localIP', 'wifiLocalIP').then(setLocalIP);
+    fetchData('freeMemory', 'freeMemory').then(setFreeMemory);
   }, []);
 
   return (
@@ -23,21 +27,17 @@ const MemoryInfo: React.FC = () => {
             variant="contained"
             color="primary"
             onClick={ changeWifiStatus }
-          >Disconnect</Button> : <AlertDialogSlide/>
+          >Disconnect</Button> : <ScannerWifi/>
         }
       </div>
       <div className='info-block'>
         <p>Free Memory: { freeMemory }</p>
         <div>
-          <Button variant="contained" color="primary" onClick={ () => fetchData('freeMemory', 'freeMemory', setFreeMemory) }>Update</Button>
+          <Button variant="contained" color="primary" onClick={ () => fetchData('freeMemory', 'freeMemory').then(setFreeMemory) }>Update</Button>
         </div>
       </div>
     </header>
   );
-
-  function changeWifiStatus() {
-    wifiStatus === 'Connected' ? setWifiStatus('Not connected') : setWifiStatus('Connected');
-  }
 };
 
 export default MemoryInfo;

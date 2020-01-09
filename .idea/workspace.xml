@@ -3,15 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="240d124a-08c7-4c55-b428-8f10b163f1df" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AlertDialogSlide.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Measurements.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Measurements.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MemoryInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MemoryInfo.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ScannerWifi.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ScannerWifi.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.tsx" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,10 +33,15 @@
   </component>
   <component name="ProjectId" id="1UkMLCVgkke8FtK51i80iTYTheo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -57,18 +60,6 @@
       <recent name="$PROJECT_DIR$/src/components" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
@@ -83,6 +74,18 @@
       <envs />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -99,6 +102,14 @@
       <workItem from="1575986080892" duration="1114000" />
       <workItem from="1576109312786" duration="9744000" />
       <workItem from="1576165188215" duration="895000" />
+      <workItem from="1576247886905" duration="5251000" />
+      <workItem from="1576356891549" duration="20000" />
+      <workItem from="1576358606024" duration="3174000" />
+      <workItem from="1576410207111" duration="3292000" />
+      <workItem from="1577790579869" duration="2000" />
+      <workItem from="1578607796751" duration="5000" />
+      <workItem from="1578609039368" duration="19000" />
+      <workItem from="1578609142914" duration="730000" />
     </task>
     <servers />
   </component>

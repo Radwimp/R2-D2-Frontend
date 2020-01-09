@@ -28,6 +28,13 @@ header {
   height: auto;
 }
 
+.scan-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 6.5rem;
+}
+
 .info-block {
   display: flex;
   justify-content: space-around;
@@ -35,4 +42,9 @@ header {
 
 .info-block div {
   padding: 0.5rem 0;
+}
+
+#alert-dialog-slide-title h2 {
+  display: flex;
+  justify-content: space-between;
 }
