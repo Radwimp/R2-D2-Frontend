@@ -1,13 +1,15 @@
 import React from 'react';
 
-import MemoryInfo from './components/MemoryInfo';
+import Info from './components/Info';
 import Measurements from './components/Measurements';
+import ControlPanel from './components/ControlPanel';
 
 const App: React.FC = () => {
   return (
     <div className='App'>
-      <MemoryInfo/>
-      <Measurements/>
+      <Info/>
+      {/*<Measurements/>*/}
+      <ControlPanel/>
     </div>
   );
 };

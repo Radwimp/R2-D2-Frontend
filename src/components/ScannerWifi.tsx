@@ -69,9 +69,9 @@ export default function ScannerWifi() {
         <DialogContent>
           <div className='scanner'>
             <List component="nav" aria-label="main mailbox folders">
-              { networks.map((network) => {
+              { networks.map((network, i) => {
                 return (
-                  <ListItem button key={ network }>{ network }</ListItem>
+                  <ListItem button key={ i }>{ network }</ListItem>
                 );
               })
               }

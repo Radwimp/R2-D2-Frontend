@@ -40,6 +40,10 @@ header {
   justify-content: space-around;
 }
 
+.control-panel {
+  width: 30rem;
+}
+
 .info-block div {
   padding: 0.5rem 0;
 }

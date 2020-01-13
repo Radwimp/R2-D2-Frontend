@@ -1,4 +1,4 @@
-const hardcodedAddress: string = '//192.168.0.103/';
+const hardcodedAddress: string = '//192.168.0.104/';
 
 async function fetchData(link: string, attr: string = link) {
   return await fetch(hardcodedAddress + link)
