@@ -38,13 +38,15 @@ header {
 .info-block {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .control-panel {
-  width: 30rem;
+  width: 42rem;
+  margin: auto;
 }
 
-.info-block div {
+.inline-button {
   padding: 0.5rem 0;
 }
 

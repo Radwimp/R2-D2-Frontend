@@ -3,15 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="240d124a-08c7-4c55-b428-8f10b163f1df" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ControlPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ControlPanel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MemoryInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Info.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ScannerWifi.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ScannerWifi.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +118,11 @@
       <workItem from="1579041602196" duration="800000" />
       <workItem from="1579080897394" duration="7100000" />
       <workItem from="1579153515610" duration="326000" />
-      <workItem from="1579153860789" duration="604000" />
+      <workItem from="1579153860789" duration="1108000" />
+      <workItem from="1579627740405" duration="2751000" />
+      <workItem from="1579903247624" duration="4173000" />
+      <workItem from="1579941051677" duration="2219000" />
+      <workItem from="1579959110595" duration="7618000" />
     </task>
     <servers />
   </component>

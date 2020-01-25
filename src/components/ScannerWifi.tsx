@@ -48,7 +48,7 @@ export default function ScannerWifi() {
   };
 
   return (
-    <div>
+    <div className="inline-button">
       <Button variant="contained" color="primary" onClick={handleClickOpen}>
         Connect
       </Button>
