@@ -1,4 +1,4 @@
-const hardcodedAddress: string = '//192.168.0.104/';
+const hardcodedAddress: string = '//192.168.0.144/';
 
 async function fetchData(link: string, attr: string = link) {
   return await fetch(hardcodedAddress + link)
@@ -6,4 +6,11 @@ async function fetchData(link: string, attr: string = link) {
     .then(res => res[attr]);
 }
 
-export { fetchData };
+async function post(link: string, body: object) {
+  return await fetch(hardcodedAddress + link, {
+    method: 'POST',
+    body: JSON.stringify(body)
+  });
+}
+
+export { fetchData, post };

@@ -39,11 +39,21 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 1rem !important;
 }
 
 .control-panel {
-  width: 42rem;
+  width: 15rem;
   margin: auto;
+}
+
+.manual-control {
+  width: 32rem;
+  margin: auto;
+}
+
+.input {
+  width: 9rem;
 }
 
 .inline-button {

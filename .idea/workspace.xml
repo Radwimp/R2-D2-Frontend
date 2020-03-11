@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="240d124a-08c7-4c55-b428-8f10b163f1df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/ManualControl.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ControlPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ControlPanel.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Info.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ScannerWifi.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ScannerWifi.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +123,27 @@
       <workItem from="1579627740405" duration="2751000" />
       <workItem from="1579903247624" duration="4173000" />
       <workItem from="1579941051677" duration="2219000" />
-      <workItem from="1579959110595" duration="7618000" />
+      <workItem from="1579959110595" duration="8670000" />
+      <workItem from="1579994735965" duration="1367000" />
+      <workItem from="1579996626921" duration="1155000" />
+      <workItem from="1580047833639" duration="44000" />
+      <workItem from="1580414199294" duration="104000" />
+      <workItem from="1581131419295" duration="3684000" />
+      <workItem from="1581187600446" duration="605000" />
+      <workItem from="1581248451580" duration="4912000" />
+      <workItem from="1581542009897" duration="10557000" />
+      <workItem from="1581646223170" duration="752000" />
+      <workItem from="1581790077073" duration="616000" />
+      <workItem from="1582242015581" duration="5000" />
+      <workItem from="1582242202393" duration="23000" />
+      <workItem from="1582242260180" duration="15079000" />
+      <workItem from="1582388123700" duration="6397000" />
+      <workItem from="1582459876573" duration="1908000" />
+      <workItem from="1582500078663" duration="1226000" />
+      <workItem from="1582506545246" duration="633000" />
+      <workItem from="1582520343246" duration="4010000" />
+      <workItem from="1583009645490" duration="7475000" />
+      <workItem from="1583754096102" duration="1244000" />
     </task>
     <servers />
   </component>

@@ -32,12 +32,12 @@ export default function ScannerWifi() {
       .then(res => setWifiStatus(res === 'true' ? 'Connected' : 'Not connected'));
   }, []);
 
-  useEffect(() => {
-    refreshWifi();
-    if (wifiStatus !== 'Connected') {
-      setTimeout(() => refreshWifi(), 3000);
-    }
-  }, [wifiStatus]);
+  // useEffect(() => {
+  //   refreshWifi();
+  //   if (wifiStatus !== 'Connected') {
+  //     setTimeout(() => refreshWifi(), 3000);
+  //   }
+  // }, [wifiStatus]);
 
   const handleClickOpen = () => {
     setOpen(true);

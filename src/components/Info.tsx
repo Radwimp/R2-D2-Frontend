@@ -6,6 +6,8 @@ import ScannerWifi from './ScannerWifi';
 const Info: React.FC = () => {
   const [wifiStatus, setWifiStatus] = useState('Not connected');
   const [localIP, setLocalIP] = useState('');
+  const [temperature, setTemperature] = useState(0);
+  const [humidity, setHumidity] = useState(0);
   const [freeMemory, setFreeMemory] = useState(0);
 
   const changeWifiStatus = () => {
@@ -13,11 +15,18 @@ const Info: React.FC = () => {
   };
 
   const updateData = () => {
-    fetchData('freeMemory', 'freeMemory').then(setFreeMemory);
+    fetchData('freeMemory').then(setFreeMemory);
+    fetchData('getData', 'data')
+      .then(arr => arr.length ? JSON.parse(arr.pop()) : { temperature: 0, humidity: 0 })
+      .then(data => {
+        setTemperature(data.temperature);
+        setHumidity(data.humidity);
+      });
   };
 
   useEffect(() => {
     fetchData('localIP', 'wifiLocalIP').then(setLocalIP);
+    fetchData('statusWiFi').then((status) => setWifiStatus(status ? 'Connected' : 'Not connected'));
     updateData();
   }, []);
 
@@ -28,7 +37,6 @@ const Info: React.FC = () => {
         { wifiStatus === 'Connected' && <p>Your local IP: { localIP }</p> }
         { wifiStatus === 'Connected' ?
           <div className="inline-button">
-            <div>123</div>
             <Button
               variant="contained"
               color="primary"
@@ -40,7 +48,9 @@ const Info: React.FC = () => {
         }
       </div>
       <div className='info-block'>
-        <p>Free Memory: { freeMemory }</p>
+        <p>Temperature: { temperature }℃</p>
+        <p>Humidity: { humidity }%</p>
+        <p>Free Memory: { freeMemory }b</p>
         <div className="inline-button">
           <Button variant="contained" color="primary" onClick={ updateData }>Update</Button>
         </div>
